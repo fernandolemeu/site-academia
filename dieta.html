@@ -7,24 +7,13 @@
 </head>
 <body>
 
-    <script>
-    function pegarValores() {
-        const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-        const valores = [];
-        
-        checkboxes.forEach((checkbox) => {
-            valores.push(checkbox.value);
-        });
-        
-        alert('Valores selecionados: ' + valores.join(', '));
-    }
-</script>
-
     <h1>Dieta personalizada</h1>
-    <p>Responda com SINCERIDADE</p>
+    <p>Responda com sinceridade para melhor compreensão</p>
 
     <div>
-        <form action="\dieta" method="post" onsubmit="pegarValores(); return false;">
+        <h2>INFORMAÇÕES BASICAS</h2>
+        
+        <form action="\dieta" method="post">
             <label for="idade" id="idade">IDADE</label>
             <input type="text" id="idade" name="idade">
 
@@ -33,6 +22,9 @@
 
             <label for="altura" id="altura">ALTURA</label>
             <input type="text" name="altura" id="altura">
+
+    <div>
+        <h2>Qual é o seu objetivo</h2>
 
         <label for="objetivo" id="objetivo">
             <input type="checkbox" name="objetivo" id="objetivo">
@@ -48,8 +40,10 @@
             <input type="checkbox" name="objetivo" id="objetivo">
             Ficar mais saudavel
         </label><br>
+    </div>
 
-            
+    <div>
+        <h2>GÊNERO</h2>
         <label for="genero">
             <input type="checkbox" name="genero" id="genero">
             Masculino
@@ -59,6 +53,7 @@
             <input type="checkbox" name="genero" id="genero">
             Feminino
         </label><br>
+    </div>
         </form>
     </div>
 </body>
