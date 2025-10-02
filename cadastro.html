@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Focus Fit</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+        <div class="inputsdocadastro">
+  <h1>Faça o seu Cadastro</h1>
+  <form action="\cadastro" method="post">
+
+    <div class="input-group">
+      <label for="email">Coloque seu Email</label>
+      <input type="text" id="email" name="email" required>
+    </div>
     
+    <div class="input-group">
+        <label for="senha">Digite uma senha</label>
+        <input type="text" name="senha" id="senha">
+    </div>
+
+    <div>
+        <label for="endereco">Coloque seu endereço</label>
+        <input type="text" id="endereco" name="endereco" required>
+    </div>
+
+    <div class="btncadastro">
+        <button type="submit">Entrar</button>
+        <p>Não tem conta?<a href="login.html">Ja tem login?</a></p>
+    </div>
+  </form>
+</div>
 </body>
 </html>
